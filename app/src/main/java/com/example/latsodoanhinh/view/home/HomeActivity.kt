@@ -14,7 +14,6 @@ class HomeActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         binding = ActivityHomeBinding.inflate(layoutInflater)
         applyWindow(binding.root)
         setContentView(binding.root)

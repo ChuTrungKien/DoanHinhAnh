@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LatSoDoanHinh">
         <activity
+            android:name=".view.home.DemoActivity"
+            android:exported="false" />
+        <activity
             android:name=".view.home.HomeActivity"
             android:exported="true">
             <intent-filter>

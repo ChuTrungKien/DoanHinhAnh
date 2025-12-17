@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.home.DemoActivity">
+
+        <ImageView
+            android:scaleType="fitCenter"
+            android:src="@drawable/nguyen_trai"
+            android:layout_margin="16dp"
+            android:orientation="vertical"
+            android:id="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/tvRandomNumber"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+
+        <LinearLayout
+            android:layout_margin="16dp"
+            android:orientation="vertical"
+            android:id="@+id/layoutContent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/tvRandomNumber"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <TextView
+                    android:id="@+id/tvOne"
+                    android:text="1"
+                    android:textStyle="bold"
+                    android:textSize="27sp"
+                    android:gravity="center"
+                    android:background="@drawable/number_border"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintWidth_percent="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:id="@+id/tvTwo"
+                    android:text="2"
+                    android:textStyle="bold"
+                    android:textSize="27sp"
+                    android:gravity="center"
+                    android:background="@drawable/number_border"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintWidth_percent="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <TextView
+                    android:id="@+id/tvThree"
+                    android:text="3"
+                    android:textStyle="bold"
+                    android:textSize="27sp"
+                    android:gravity="center"
+                    android:background="@drawable/number_border"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintWidth_percent="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:id="@+id/tvFour"
+                    android:text="4"
+                    android:textStyle="bold"
+                    android:textSize="27sp"
+                    android:gravity="center"
+                    android:background="@drawable/number_border"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintWidth_percent="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <TextView
+                    android:id="@+id/tvFive"
+                    android:text="5"
+                    android:textStyle="bold"
+                    android:textSize="27sp"
+                    android:gravity="center"
+                    android:background="@drawable/number_border"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintWidth_percent="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:id="@+id/tvSix"
+                    android:text="6"
+                    android:textStyle="bold"
+                    android:textSize="27sp"
+                    android:gravity="center"
+                    android:background="@drawable/number_border"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintWidth_percent="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <TextView
+                    android:id="@+id/tvSeven"
+                    android:text="7"
+                    android:textStyle="bold"
+                    android:textSize="27sp"
+                    android:gravity="center"
+                    android:background="@drawable/number_border"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintWidth_percent="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:id="@+id/tvEight"
+                    android:text="8"
+                    android:textStyle="bold"
+                    android:textSize="27sp"
+                    android:gravity="center"
+                    android:background="@drawable/number_border"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintWidth_percent="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:visibility="gone"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@drawable/button_circle_red"
+            android:id="@+id/tvRandomNumber"
+            android:layout_width="56dp"
+            android:layout_height="56dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
